@@ -3,7 +3,7 @@ package com.example.exp03.task4;
 public class LightCommand implements Command {
     private Light light;
 
-    public LightOnCommand(Light light) {
+    public LightCommand(Light light) {
         this.light = light;
     }
 
