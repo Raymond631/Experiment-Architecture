@@ -2,7 +2,7 @@ package com.example.exp03.task4;
 
 public class Light {
     private String room;
-    private String status;
+    private boolean status;
 
     public Light(String room) {
         this.room = room;
