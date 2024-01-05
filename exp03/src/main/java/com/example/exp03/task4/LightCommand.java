@@ -1,6 +1,6 @@
 package com.example.exp03.task4;
 
-public class LightOnCommand implements Command {
+public class LightCommand implements Command {
     private Light light;
 
     public LightOnCommand(Light light) {
@@ -9,6 +9,10 @@ public class LightOnCommand implements Command {
 
     @Override
     public void execute() {
-        light.turnOn();
+        if (light.status){
+            light.turnOff();
+        }else{
+            light.turnOn();
+        }
     }
 }
